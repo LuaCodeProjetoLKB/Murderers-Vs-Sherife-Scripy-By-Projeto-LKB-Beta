@@ -9,7 +9,7 @@ wait(1)
 NotificationLibrary:SendNotification("Success", "Loading Script !", 3)
 wait(0.1)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtixz/Library-UI-Projeto-LKA-Scriptblox-Custom/main/Free"))()
+local CoastingLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtixz/Library-UI-Projeto-LKA-Scriptblox-Custom/main/Free"))()
 local MainTab = CoastingLibrary:CreateTab("Combat")
 local PlayerTab = CoastingLibrary:CreateTab("Player")
 local ExtrasTab = CoastingLibrary:CreateTab("Extras")
