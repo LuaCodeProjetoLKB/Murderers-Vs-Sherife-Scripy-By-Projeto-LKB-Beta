@@ -10,8 +10,6 @@ local ExtrasSection = ExtrasTab:CreateSection("Extras")
 FFSection:CreateLabel("Features;", "Hitbox, Walkspeed, Jumppower, Aim (Recomends PC), Esp Team Color, Inf Jump, Loop-Speed/Jump")
 
 FFSection:CreateButton("Aimcircle (MB/PC)", function()
-NotificationLibrary:SendNotification("Warning", "Aim TeamCheck (Beta)", 3)
-wait(0.1)
 _G.config = {
 Fov = 30,
 MaxTransparency = 0.1,
