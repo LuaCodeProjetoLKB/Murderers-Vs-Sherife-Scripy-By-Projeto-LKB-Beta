@@ -1,14 +1,3 @@
-local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/Main/Library.lua"))()
-wait(1)
-NotificationLibrary:SendNotification("Warning", "Script Load !", 3)
-wait(0.1)
-NotificationLibrary:SendNotification("Info", "Made By Projeto LKA", 3)
-wait(0.1)
-NotificationLibrary:SendNotification("Error", "You Use Arceus X Executor Provably It Identifies That Esp Is Dangerous But It's Safe", 3)
-wait(1)
-NotificationLibrary:SendNotification("Success", "Loading Script !", 3)
-wait(0.1)
-
 local CoastingLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtixz/Library-UI-Projeto-LKA-Scriptblox-Custom/main/Free"))()
 local MainTab = CoastingLibrary:CreateTab("Combat")
 local PlayerTab = CoastingLibrary:CreateTab("Player")
@@ -48,7 +37,7 @@ for i,v in next, game:GetService('Players'):GetPlayers() do
 if v.Name ~= game:GetService('Players').LocalPlayer.Name then
 pcall(function()
 v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
-v.Character.HumanoidRootPart.Transparency = 0.2
+v.Character.HumanoidRootPart.Transparency = 0.75
 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
 v.Character.HumanoidRootPart.Material = "Neon"
 v.Character.HumanoidRootPart.CanCollide = false
@@ -60,12 +49,6 @@ end)
 end)
 
 PLSection:CreateButton("Esp Team Color", function()
-    local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/Main/Library.lua"))()
-  wait(0.1)
-  NotificationLibrary:SendNotification("Warning", "Red Color = No Team", 3)
-  wait(0.1)
-  NotificationLibrary:SendNotification("Warning", "Green Color = Team", 3)
-  wait(1)
 local plr = game.Players.LocalPlayer
 local camera = game.Workspace.CurrentCamera
 for i, v in pairs(game.Players:GetChildren()) do
